@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystone Certification Workflow Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .flow-arrow {
+            color: #0A9396;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+        .flywheel-arrow {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #EE9B00;
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: #F0F4F8;">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2" style="color: #005F73;">The Keystone Certification Workflow</h1>
+            <p class="text-lg md:text-xl font-light" style="color: #0A9396;">A Virtuous Cycle of Trust and Efficiency in Property Verification</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center mb-6" style="color: #005F73;">The Core Process: From Upload to Verification</h2>
+                <p class="text-center text-gray-600 mb-8">The Keystone process is a streamlined, transparent journey. It begins with a developer's submission and culminates in a publicly verifiable, digitally native asset, establishing a new standard for trust in real estate.</p>
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-4">
+                    <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                        <div class="rounded-full flex items-center justify-center h-20 w-20 text-3xl font-bold mb-3" style="background-color: #94D2BD; color: #005F73;">1</div>
+                        <h3 class="font-bold" style="color: #005F73;">Developer Upload</h3>
+                        <p class="text-sm text-gray-600">A new lease or project is securely submitted to the platform.</p>
+                    </div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                        <div class="rounded-full flex items-center justify-center h-20 w-20 text-3xl font-bold mb-3" style="background-color: #94D2BD; color: #005F73;">2</div>
+                        <h3 class="font-bold" style="color: #005F73;">Certification</h3>
+                        <p class="text-sm text-gray-600">Agents verify against DPI rails like ULPIN and Bhu-Naksha.</p>
+                    </div>
+                     <div class="flow-arrow hidden md:block">&rarr;</div>
+                     <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                         <div class="rounded-full flex items-center justify-center h-20 w-20 text-3xl font-bold mb-3" style="background-color: #94D2BD; color: #005F73;">3</div>
+                        <h3 class="font-bold" style="color: #005F73;">Data Governance</h3>
+                        <p class="text-sm text-gray-600">DPDP-compliant consent and audit logs are immutably recorded.</p>
+                    </div>
+                     <div class="flow-arrow hidden md:block">&rarr;</div>
+                     <div class="flow-arrow block md:hidden">&darr;</div>
+                    <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                        <div class="rounded-full flex items-center justify-center h-20 w-20 text-3xl font-bold mb-3" style="background-color: #94D2BD; color: #005F73;">4</div>
+                        <h3 class="font-bold" style="color: #005F73;">Public Verification</h3>
+                        <p class="text-sm text-gray-600">A certified asset is created with QR verification and DigiLocker issuance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8" style="color: #005F73;">Transformative Impact for Every Stakeholder</h2>
+             <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">The verified digital asset unlocks unprecedented value across the ecosystem. Lenders accelerate decisions, regulators gain real-time oversight, and citizens are empowered with portable, trusted documentation.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-2" style="color: #CA6702;">Lenders & REITs</h3>
+                    <p class="text-8xl font-black" style="color: #AE2012;">25%+</p>
+                    <p class="text-lg font-semibold mb-2" style="color: #005F73;">Faster Turnaround Time</p>
+                    <p class="text-gray-600">Scanning a KCP/KCD QR code provides instant, trusted data, dramatically cutting down due diligence timelines and reducing risk.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🏛️</div>
+                    <h3 class="text-xl font-bold mb-2" style="color: #CA6702;">Regulators</h3>
+                     <p class="text-4xl font-black py-7" style="color: #AE2012;">Seamless Compliance</p>
+                    <p class="text-lg font-semibold mb-2" style="color: #005F73;">Real-Time Dashboards</p>
+                    <p class="text-gray-600">Access to an aggregated, state-federal data dashboard ensures effortless compliance monitoring and policy-making.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">👤</div>
+                    <h3 class="text-xl font-bold mb-2" style="color: #CA6702;">Citizens & Tenants</h3>
+                     <p class="text-4xl font-black py-7" style="color: #AE2012;">Empowered Ownership</p>
+                    <p class="text-lg font-semibold mb-2" style="color: #005F73;">Portable DigiLocker Docs</p>
+                    <p class="text-gray-600">Certified documents in DigiLocker are secure, easily shareable, and universally trusted for any future transaction or verification need.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-center mb-2" style="color: #005F73;">Stakeholder Engagement</h3>
+                <p class="text-center text-gray-600 mb-4">This chart illustrates the proportional involvement of each key stakeholder group within the Keystone ecosystem, showing a strong adoption by financial institutions.</p>
+                <div class="chart-container">
+                    <canvas id="stakeholderChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                 <h3 class="text-2xl font-bold text-center mb-2" style="color: #005F73;">Processing Time Reduction</h3>
+                 <p class="text-center text-gray-600 mb-4">Keystone's digital-first certification process drastically reduces project turnaround time compared to traditional, manual methods, delivering significant efficiency gains.</p>
+                <div class="chart-container">
+                    <canvas id="tatChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-lg shadow-lg p-8 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-4" style="color: #005F73;">The Flywheel Effect</h2>
+                    <p class="text-gray-600 mb-4">The Keystone ecosystem is designed for compounding growth. Each certified asset enriches the entire system, creating a powerful feedback loop that enhances data quality, strengthens analytics, and attracts more partners.</p>
+                    <p class="text-gray-600">This virtuous cycle ensures that the platform becomes smarter and more valuable with every transaction, establishing a defensible moat of data and trust.</p>
+                </div>
+                <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-8">
+                    <div class="relative w-full h-96 flex items-center justify-center">
+                        <div class="absolute w-72 h-72 md:w-80 md:h-80 border-4 border-dashed rounded-full" style="border-color: #0A9396;"></div>
+                        
+                        <div class="absolute text-center" style="transform: translate(0, -120px);">
+                            <div class="bg-white p-3 rounded-lg shadow-md">
+                                <h4 class="font-bold" style="color: #CA6702;">More Certified Artifacts</h4>
+                                <p class="text-xs text-gray-500">Increased platform usage</p>
+                            </div>
+                        </div>
+                        <div class="flywheel-arrow" style="transform: translate(80px, -80px) rotate(45deg);">&curvearrowright;</div>
+                        
+                        <div class="absolute text-center" style="transform: translate(120px, 0);">
+                            <div class="bg-white p-3 rounded-lg shadow-md">
+                                <h4 class="font-bold" style="color: #CA6702;">Improved Data Quality</h4>
+                                <p class="text-xs text-gray-500">Richer, more reliable data</p>
+                            </div>
+                        </div>
+                         <div class="flywheel-arrow" style="transform: translate(80px, 80px) rotate(135deg);">&curvearrowright;</div>
+
+                        <div class="absolute text-center" style="transform: translate(0, 120px);">
+                             <div class="bg-white p-3 rounded-lg shadow-md">
+                                <h4 class="font-bold" style="color: #CA6702;">Strengthened AI & Dashboards</h4>
+                                <p class="text-xs text-gray-500">More powerful insights</p>
+                            </div>
+                        </div>
+                        <div class="flywheel-arrow" style="transform: translate(-80px, 80px) rotate(225deg);">&curvearrowright;</div>
+
+                        <div class="absolute text-center" style="transform: translate(-120px, 0);">
+                            <div class="bg-white p-3 rounded-lg shadow-md">
+                                <h4 class="font-bold" style="color: #CA6702;">Attracts More Partners</h4>
+                                <p class="text-xs text-gray-500">Ecosystem growth</p>
+                            </div>
+                        </div>
+                        <div class="flywheel-arrow" style="transform: translate(-80px, -80px) rotate(315deg);">&curvearrowright;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl font-bold text-center mb-2" style="color: #005F73;">Projected Data Quality Growth</h3>
+            <p class="text-center text-gray-600 mb-4">The flywheel effect leads to an exponential improvement in data quality across the ecosystem over time. As more partners join and more assets are certified, the collective intelligence of the platform grows, benefiting all participants.</p>
+            <div class="chart-container h-96">
+                <canvas id="flywheelChart"></canvas>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const brilliantBlues = ['#0A9396', '#94D2BD', '#EE9B00', '#CA6702', '#AE2012'];
+
+            function wrapLabels(label, maxLength) {
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            
+            const tooltipTitleCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            const stakeholderCtx = document.getElementById('stakeholderChart');
+            if (stakeholderCtx) {
+                new Chart(stakeholderCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Lenders & REITs', 'Regulators', 'Citizens & Tenants'],
+                        datasets: [{
+                            label: 'Stakeholder Engagement',
+                            data: [55, 25, 20],
+                            backgroundColor: brilliantBlues,
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                             tooltip: tooltipTitleCallback.plugins.tooltip
+                        }
+                    }
+                });
+            }
+
+            const tatCtx = document.getElementById('tatChart');
+            if(tatCtx) {
+                new Chart(tatCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Traditional Process', 'Keystone Process'],
+                        datasets: [{
+                            label: 'Average Turnaround Time (Days)',
+                            data: [45, 10],
+                            backgroundColor: [brilliantBlues[1], brilliantBlues[0]],
+                            borderColor: ['#76c8b0', '#098285'],
+                            borderWidth: 2,
+                            borderRadius: 5
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                         plugins: {
+                            legend: {
+                                display: false
+                            },
+                             tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Days'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const flywheelCtx = document.getElementById('flywheelChart');
+            if(flywheelCtx) {
+                new Chart(flywheelCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+                        datasets: [{
+                            label: 'Data Quality Index',
+                            data: [60, 75, 85, 92, 98],
+                            fill: true,
+                            backgroundColor: 'rgba(148, 210, 189, 0.3)',
+                            borderColor: '#0A9396',
+                            tension: 0.4,
+                            pointBackgroundColor: '#EE9B00',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: '#EE9B00',
+                            pointRadius: 6,
+                            pointHoverRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                             tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                title: {
+                                    display: true,
+                                    text: 'Quality Index (0-100)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
